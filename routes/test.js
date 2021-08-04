@@ -13,7 +13,7 @@ router.get('/', function(req, res, next) {
   //return wrong body
   console.log(req.body);
 
-  res.render('home', { title: 'SE_Aotzu Base GET', user: 'USERNAME', req: simpleStringify(req), res: simpleStringify(res)});
+  res.render('test', { title: 'SE_Aotzu Base GET', user: 'USERNAME', req: simpleStringify(req), res: simpleStringify(res)});
 });
 
 router.post('/', function(req, res, next) {
@@ -21,7 +21,7 @@ router.post('/', function(req, res, next) {
 
   console.log(req.body);
 
-  res.render('home', { title: 'SE_Aotzu Base POST', user: 'USERNAME', req: simpleStringify(req), res: simpleStringify(res)});
+  res.render('test', { title: 'SE_Aotzu Base POST', user: 'USERNAME', req: simpleStringify(req), res: simpleStringify(res)});
 });
 
 function simpleStringify (object){
